@@ -1,6 +1,12 @@
 <template>
   <div>
-    <Nuxt />
+    <CpsNavbar />
+    <CpsSidebarLeft />
+    <section class="section">
+      <div class="container">
+        <Nuxt />
+      </div>
+    </section>
   </div>
 </template>
 
