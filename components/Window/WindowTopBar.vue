@@ -1,9 +1,9 @@
 <template>
   <div class="window-top-bar px-3 is-flex">
+    <div class="size-selector"></div>
     <div class="dots">
       <span></span><span></span><span></span>
     </div>
-    <div class="size-selector"></div>
   </div>
 </template>
 
@@ -13,14 +13,13 @@ export default {};
 
 <style lang="scss" scoped>
 @import "~/assets/css/cyborg/_variables.scss";
-@import "~bulma/sass/utilities/initial-variables";
 
 .window-top-bar {
   min-height: 3rem;
   border-bottom: 1px solid $border;
   background: $black;
   .dots {
-    margin-right: auto;
+    margin-left: auto;
     display: flex;
     span {
       display: inline-block;

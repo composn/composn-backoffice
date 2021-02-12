@@ -1,12 +1,14 @@
 <template>
-  <div>
-    <CpsNavbar />
+  <div class="is-flex">
     <CpsSidebarLeft />
-    <section class="section">
-      <div class="container">
-        <Nuxt />
-      </div>
-    </section>
+    <div class="is-flex-grow-1">
+      <CpsNavbar />
+      <section class="section">
+        <div class="container">
+          <Nuxt />
+        </div>
+      </section>
+    </div>
   </div>
 </template>
 

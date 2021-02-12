@@ -7,7 +7,6 @@ export default {
     title: 'composn-backoffice',
     htmlAttrs: {
       lang: 'en',
-      class: 'dark-mode',
     },
     meta: [
       { charset: 'utf-8' },

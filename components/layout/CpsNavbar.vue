@@ -1,5 +1,5 @@
 <template>
-  <b-navbar fixed-top type="is-dark" wrapper-class="container">
+  <b-navbar  type="is-dark" wrapper-class="">
     <template #brand>
       <b-navbar-item tag="router-link" :to="{ path: '/' }">
         Composn
@@ -10,3 +10,9 @@
     <template #end> </template>
   </b-navbar>
 </template>
+<style scoped>
+.navbar {
+  position: sticky;
+  top: 0;
+}
+</style>
