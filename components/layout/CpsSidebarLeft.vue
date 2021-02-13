@@ -9,8 +9,8 @@
       <b-menu>
         <b-menu-list>
           <b-menu-item tag="nuxt-link" label="Pages" to="/pages" :expanded="isActive('/pages')">
-            <li><a>Row</a></li>
-            <li><a>Column</a></li>
+            <li><DragMenuItem type="row">Row</DragMenuItem></li>
+            <li><DragMenuItem type="column">Column</DragMenuItem></li>
             <b-menu-item class="is-submenu">
               <template #label="props">
                 Blocks
