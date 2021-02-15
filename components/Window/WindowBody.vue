@@ -1,26 +1,28 @@
 <template>
-  <div class="window-body p-5">
+  <div class="window-body p-3">
     <drop-list
       :items="structures"
       row
-      style="height: 500px"
+      style="min-height: inherit"
       type="row"
       @insert="onInsert"
       @reorder="onReorder"
     >
       <template #item="{ item }">
-        <drag :key="item.key" :data="item">
-          <div style="background: red">
-            {{ item.type }}
+        <DragStructure :key="item.key" :data="item">
+          <div class="p-3">
+            <div class="" style="background: red">
+              {{ item.type }}
+            </div>
           </div>
-        </drag>
+        </DragStructure>
       </template>
       <template #feedback="{data}">
         <div :key="data.key" class="feedback"/>
       </template>
-      <template #reordering-feedback="{item}">
-        <div key="feedback" class="reordering-feedback"/>
-      </template>
+<!--      <template #reordering-feedback="{item}">-->
+<!--        <div key="feedback" class="reordering-feedback"/>-->
+<!--      </template>-->
     </drop-list>
   </div>
 </template>

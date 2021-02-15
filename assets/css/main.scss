@@ -4,3 +4,7 @@
 @import "~bulma";
 @import "~buefy/src/scss/buefy";
 @import "cyborg/overrides";
+
+.drag-icon {
+  cursor: grab;
+}

@@ -2,7 +2,6 @@
   <b-sidebar
     fullheight
     open
-    type="is-black"
     position="static"
   >
     <div class="p-2 sticked">
@@ -49,6 +48,9 @@ export default {
 }
 .b-sidebar {
   min-height: 100vh;
+  /deep/ .sidebar-content {
+    background: $black-ter;
+  }
 }
 .menu-list /deep/ a.is-active {
   background: $link;
